@@ -12,9 +12,9 @@ if img_file is not None:
     img = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
     
     # Resize the image to 1536x2048
-    resized_img = cv2.resize(img, (2048, 1536))
+    resized_img = cv2.resize(img, (1536, 2048))
     
-    # Get the dimensions of the resized image
+    # Get the dimensions of the resized image 
     h, w, c = resized_img.shape
     
     # Display the resized image
